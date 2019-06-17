@@ -7,10 +7,13 @@
     "node": "11.3.0"
   },
   "scripts": {
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "server:dev": "nodemon server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -w",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +22,7 @@
     "express": "^4.16.4",
     "mongodb": "^3.1.12",
     "nodemon": "^1.18.9",
+    "serve": "^11.0.1",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1"
   }
