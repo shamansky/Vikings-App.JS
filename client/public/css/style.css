@@ -1,0 +1,497 @@
+#body {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Berkshire Swash', Helvetica, sans-serif;
+  background: url('../images/misc/YellowWoodPortrait.png');
+  padding: 0;
+  margin: 0;
+}
+
+#valhallButtonHidden{
+  height: 200px;
+  width: 200px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  margin-top: 750px;
+}
+
+#return-to-top{
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.5em;
+  color: black;
+  transition: 0.5s ease;
+  font-family: 'Merienda One', Helvetica, sans-serif;
+}
+#return-to-top:hover{
+  color: rgba(255,0,0,0.9);
+}
+
+#hide{
+  display: none;
+}
+
+#kattegat{
+  font-size: 4em;
+  position: absolute;
+  margin-top: 400px;
+  color: rgba(255,255,255,0.3);
+  font-family: 'Berkshire Swash', Helvetica, sans-serif;
+}
+
+#new-container{
+  margin: 0;
+  background: url('../images/misc/valhallaBackground.png');
+  background-size: cover;
+  color: rgba(243, 168, 59, 0.9);
+}
+
+#new-container p{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+#skal {
+  font-size: 13em;
+  position: absolute;
+  color: rgba(255,255,255,0.1);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+  font-family: 'Berkshire Swash', Helvetica, sans-serif;
+}
+
+.fullscreenBg{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  border: 5px solid rgba(255,0,0,0.3);
+  border-radius: 50px 50px 0 0;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+button{
+  border-bottom: 3px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  background-color: rgba(255,0,0,0.5);
+  margin: 0 5px;
+  height: 40px;
+  transition: 0.2s ease;
+  font-family: 'Merienda One', Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  transition: 0.5s ease;
+}
+
+button:hover{
+  cursor: pointer;
+  color: rgba(255,255,255,0.7);
+  border-bottom: 3px solid transparent;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+
+}
+
+#vikingsLogo{
+  height: 150px;
+  width: 150px;
+  border: none;
+  position: absolute;
+  margin-top: 50px;
+  opacity: 0.3;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* STORIES */
+
+#valkyrie_image{
+  border-radius: 35px;
+  border: 5px solid rgba(243, 168, 59, 0.9);
+}
+
+#ragnarok_image{
+  border: 5px solid rgba(243, 168, 59, 0.9);
+}
+
+#stories{
+  margin: 0px 50px 50px 10px ;
+}
+
+#storyTimePara{
+  color: rgba(243, 168, 59, 0.9);
+}
+
+#radio-text{
+  display: inline;
+  padding: 20px 0;
+}
+
+
+#ragnarok, #bloodEagle, #valkyries{
+  min-height: 450px;
+  max-height: auto;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: rgba(0,0,0,0.3);
+}
+
+#pages {
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-left: -50px;
+}
+#page1, #page2, #page3, #page4{
+  margin: 10px;
+  padding: 5px;
+  font-size: 1em;
+  display: inline;
+}
+
+#page1:hover, #page2:hover, #page3:hover, #page4:hover{
+  cursor: pointer;
+  color: rgba(255,255,255,0.4)
+}
+
+#pageOneDiv,  #pageTwoDiv, #pageThreeDiv, #pageFourDiv{
+  width: 90%;
+  font-family: 'Merienda One', Helvetica, sans-serif;
+  color: rgba(255,255,255,0.6)
+  /* background-color: red; */
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* VIKINGS */
+
+#viking-name{
+  color: rgba(255, 0, 0, 0.7);
+  /* color: rgba(72,72,72,0.8) */
+  font-size: 3em;
+}
+
+#parent-role{
+  color: red;
+}
+#parent-names{
+  font-family: 'Merienda One', Helvetica, sans-serif;
+  color: rgba(255, 0, 0, 0.8);
+  /* color: black; */
+}
+
+#vikingContainer{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px 0px;
+  justify-content: center;
+}
+
+span {
+  color: black;
+}
+
+#viking-div-inner{
+  width: 50%;
+}
+
+#viking-div{
+  padding: 50px;
+}
+
+#battle-div {
+  /* text-align: center; */
+  width: 100%;
+  font-family: 'Merienda One', Helvetica, sans-serif;
+}
+
+#battle-head{
+  color: rgba(255, 0, 0, 0.7);
+}
+
+#battleName, #battleDesc {
+  color: rgba(0,0,0,0.6);;
+  font-family: 'Berkshire Swash', Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#inputBattleName, #textArea {
+  background-color: rgba(255, 0, 0, 0.3);
+  color: white;
+  font-size: 0.6em;
+}
+
+#add-battle-submit{
+  border-bottom: 3px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  background-color: rgba(255,0,0,0.5);
+  margin: 0 5px;
+  height: 30px;
+  width: 100px;
+  transition: 0.2s ease;
+  font-family: 'Merienda One', Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  transition: 0.5s ease;
+}
+
+#add-battle-submit:hover{
+  cursor: pointer;
+  color: rgba(255,255,255,0.7);
+  border-bottom: 3px solid transparent;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* GODS */
+
+
+#godContainer{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  justify-content: center;
+}
+
+
+#god-name{
+  color: rgba(255, 0, 0, 0.6);
+  font-size: 3em;
+}
+
+#title{
+  font-size: 1.5em;
+  color: rgba(255, 0, 0, 0.6);
+}
+
+#god-aka{
+  color: black;
+  font-size: 1.5em;
+}
+
+#god-div{
+  padding: 50px;
+}
+
+#god-div-inner{
+  width: 50%;
+}
+
+#god-description {
+  /* color: rgba(255, 0, 0, 0.7); */
+  /* color: rgba(72,72,72,1); */
+  color: black;
+  font-family: 'Merienda One', Helvetica, sans-serif;
+}
+
+#odins-login-container{
+  width: 100%;
+  height: 300px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ODIN LOGIN */
+
+#odin-login-btn{
+  background: url(../images/misc/odinLogin.png);
+  position: absolute;
+  margin-top: 60px;
+  margin-left: -18px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+  transition: 0.5s ease;
+}
+#login-text{
+  margin-top: 40px;
+  width: 100px;
+  margin-left: -35px;
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+}
+
+#odin-login-btn:hover{
+  background: url(../images/misc/odinLoginHover.png);
+  background-size: 40px;
+  opacity: 0.;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* GODS REJECT */
+
+#returnBtn{
+  background-color: transparent;
+  margin: 0 0 0 210px;
+}
+
+#godsReject{
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  justify-content: center;
+  background-color: black;
+  animation-name: lightning;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+}
+
+#nightKing{
+  /* margin-left: -100px; */
+  border: none;
+  border-radius: 25px;
+  margin-left: 80px;
+}
+
+#godRejectHead{
+  /* text-align: center; */
+  color: white;
+  /* margin: 0 -100px 0 0; */
+  padding: 50px 0;
+}
+
+#godRejectHeadSub{
+  /* text-align: center; */
+  color: white;
+  margin: 0 0 0 50px;
+  padding: 50px 0;
+}
+
+#godsReject button{
+  border: none;
+  border-radius: 0;
+}
+
+#godsReject button:hover{
+  background: inherit;
+}
+
+#rejectGod{
+  /* background: none; */
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* VALHALLA */
+
+#storyTimeHeader{
+  font-size: 2em;
+  margin-left: -55px;
+}
+
+#welcome-para-story{
+  WIDTH: 50%;
+  font-family: 'Merienda One', Helvetica, sans-serif;
+}
+
+#odins-div{
+  padding: 20px;
+}
+
+#viking-valhalla{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  justify-content: center;
+}
+
+#inner-vik-valhalla{
+  width: 45%;
+  margin: 20px;
+}
+
+#return-from-valhalla{
+  background: url(../images/misc/returnFromValhalla.png);
+  background-size: cover;
+  border: none;
+  width: 100px;
+  height: 100px;
+  transition: 1s ease;
+}
+#return-valhalla-text{
+  color: black;
+  margin-top: -15px;
+}
+
+#return-valhalla-text:hover{
+  cursor: pointer;
+}
+
+#return-from-valhalla:hover{
+  cursor: pointer;
+  background: url(../images/misc/returnFromValhallaHover.png);
+  width: 100px;
+  background-size: cover;
+  height: 100px;
+  opacity: 0.5;
+}
+
+#odin-name{
+  color: rgba(255,255,255,0.8);
+  font-size: 4em;
+  margin-top: 10px;
+}
+
+
+#odin-title, #odin-aka{
+  color: rgba(255,255,255,0.6);
+}
+
+#viking-name-valhalla, #wiki-head{
+  color: rgba(255,255,255,0.8);
+}
+
+#accomplishment-valhalla{
+  color: rgba(255,255,255,0.6);
+}
+
+#wiki-para, #accomplishment-desc-valhalla, #odin-desc{
+  font-family: 'Merienda One', Helvetica, sans-serif;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ANIMATION */
+
+
+@keyframes lightning {
+  0%{
+    background-color: black;
+  }
+  50%{
+    background-color: white;
+    color: black;
+  }
+  100%{
+    background-color: black;
+  }
+}
