@@ -27,7 +27,7 @@
     "dot-prop": ">=4.2.1",
     "elliptic": ">=6.5.3",
     "acorn": ">=5.7.4",
-    "minimist": ">=1.2.3",
+    "minimist": ">=1.2.6",
     "kind-of": ">=6.0.3",
     "serialize-javascript": ">=3.1.0",
     "yargs-parser": ">=13.1.2",
